@@ -6,6 +6,7 @@ import { About } from "@/pages/About";
 import { TodoList } from "@/pages/TodoList";
 import { AdminLayout } from "@/components/layouts/adminLayout";
 import { UsersAdminPage } from "@/pages/admin/users";
+import { ProductsAdminPage } from "@/pages/admin/products";
 
 function App() {
   const location = useLocation();
@@ -41,6 +42,11 @@ function App() {
           <Route path="/admin/users" element={
             <AnimatedPage>
               <UsersAdminPage />
+            </AnimatedPage>
+            } />
+          <Route path="/admin/products" element={
+            <AnimatedPage>
+              <ProductsAdminPage />
             </AnimatedPage>
             } />
         </Route>

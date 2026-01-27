@@ -2,7 +2,7 @@ import React from "react";
 import { LayoutTextFlip } from "@/components/ui/layout-text-flip";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
-import { Info, List, Users } from "lucide-react";
+import { Info, List, ShoppingCart, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 export const IntroText = () => {
   return (
@@ -37,6 +37,12 @@ export const IntroText = () => {
           <Link to="/admin/users">
             <Users />
             Admin
+          </Link>
+        </Button>
+        <Button asChild>
+          <Link to="/admin/products">
+            <ShoppingCart />
+            Products
           </Link>
         </Button>
         </div>
