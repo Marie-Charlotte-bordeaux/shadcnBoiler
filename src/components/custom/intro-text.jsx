@@ -7,7 +7,16 @@ import { Link } from "react-router-dom";
 export const IntroText = () => {
   return (
     <>
-      <motion.div className="relative mx-4 my-4 flex flex-col items-center justify-center gap-4 text-center sm:mx-0 sm:mb-0 sm:flex-row">
+      <div className="flex flex-col items-center justify-center text-center gap-4 mb-10">
+  <h1 className="text-6xl sm:text-7xl font-extrabold text-white drop-shadow-lg">
+    Bienvenue ici
+  </h1>
+  <h2 className="text-4xl sm:text-5xl font-bold text-indigo-400 drop-shadow-md">
+    Tu vas voir c'est trop chouette !
+  </h2>
+</div>
+
+      {/* <motion.div className="relative mx-4 my-4 flex flex-col items-center justify-center gap-4 text-center sm:mx-0 sm:mb-0 sm:flex-row">
         <LayoutTextFlip
           text="Bienvenue sur votre base"
           words={[
@@ -45,7 +54,7 @@ export const IntroText = () => {
             Products
           </Link>
         </Button>
-        </div>
+        </div> */}
     </>
   );
 };
